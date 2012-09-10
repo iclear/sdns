@@ -34,7 +34,7 @@ int main(int argc, char **argv)
         // getting the IP (Type A)
         sdns_getA(hostname, server, ip);
 
-        // printing the returned IPs
+        // printing the returned IPs 
         int i = 0;
         while( strcmp(ip[i],"\0") )
         {
