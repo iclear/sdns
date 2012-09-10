@@ -133,7 +133,7 @@ typedef struct
 } RR;
 
 // returns the IP resolved from host name replied by the server passed
-void sdns_getA(unsigned char *host, unsigned char *server, 
+extern void sdns_getA(unsigned char *host, unsigned char *server, 
         unsigned char ip[][16]);
 
 #endif
