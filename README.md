@@ -1,4 +1,4 @@
 sdns
 ====
 
-Simple DNS resolver (library) with the option to specify the DNS server to request.
+Simple DNS lookup library which permits to specify the DNS server to request.
