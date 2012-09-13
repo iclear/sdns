@@ -323,7 +323,15 @@ void sdns_getA(unsigned char *host, unsigned char *server,
     
     // setting the server informations
     int sockfd = 0;
-    
+
+    // first of all, handle the localhost case
+    if ( strcmp(host, "localhost") == 0 )
+    {
+        strcpy(ip[0],"127.0.0.1");
+        return;
+    }
+
+    // setting the server socket informations
     sockfd = settingServer(server, &dest);
     
     // creating the memory space for the Question message
